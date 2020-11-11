@@ -1,7 +1,7 @@
 <button (click)="openModal()">
   Open
 </button>
-<app-modal>
+<app-modal *ngIf="modalOpen">
   <div class="dialog">
     <p>
       Donec enim diam vulputate ut. Convallis convallis tellus id interdum velit
