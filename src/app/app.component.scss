@@ -2,3 +2,19 @@
   font-size: 2.2rem;
   margin: 0;
 }
+
+.dialog {
+  background-color: white;
+  padding: 2.4rem;
+  border-radius: 0.2rem;
+  width: 40rem;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.secondary-btn {
+  margin-right: 0.8rem;
+}

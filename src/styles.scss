@@ -1,5 +1,5 @@
 /* Add application styles & imports to this file! */
-@import "./styles/modal";
+@import "~@angular/cdk/overlay-prebuilt.css";
 
 html {
   font-size: 62.5%;
@@ -10,57 +10,6 @@ body {
   font-family: Lato;
 }
 
-.cdk-global-overlay-wrapper {
-  display: flex;
-  z-index: 10;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.cdk-overlay-container {
-  position: fixed;
-  pointer-events: none;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.cdk-overlay-backdrop {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  pointer-events: auto;
-  -webkit-tap-highlight-color: transparent;
-  opacity: 0;
-}
-
-.cdk-overlay-backdrop-showing.dark-backdrop {
-  background: black;
-  opacity: 0.72;
-}
-
-.cdk-overlay-pane {
-  background: white;
-  overflow-y: auto;
-  width: 100%;
-  height: fit-content;
-}
-
-.cdk-overlay-pane.rightside {
-  width: 52rem;
-  background: white;
-  height: 100%;
-  margin-left: auto;
-}
-
-.cdk-overlay-pane.leftside {
-  width: 52rem;
-  background: white;
-  height: 100%;
+.dark-backdrop {
+  background: rgba($color: #000000, $alpha: 0.5);
 }
